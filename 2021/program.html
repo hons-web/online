@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>HONS 2021</title>
+
+        <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+        <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+        <link href="stylesheets/abstracts.css" type="text/css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="javascripts/jquery.nivo.slider.pack.js"></script>
+        <script src="javascripts/menu.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#nav_menu_main").load("menu.html");
+                $("#nav_menu_small").load("menu.html");
+                $("#sidebar").load("sidebar.html");
+
+                $('#slider').nivoSlider();
+
+                $('.menu.dropdown ul li').click(function(){
+                    $(this).find('ul').toggle();
+                });      
+            });      
+        </script>  
+    </head>
+
+    <body>    
+        <header class="page">
+            <div class="container">
+
+                <div class="sixteen columns logo">
+                    <h3><a href="index.html">HONS 2021</a></h3>
+                    <div class="menu full">          
+                        <ul id="nav_menu_main"></ul>
+                    </div>          
+
+                    <div class="menu dropdown">
+                        <ul>
+                            <li><a href="#">Menu</a>              
+                                <ul id="nav_menu_small"></ul>              
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>    
+
+        <div class="container">
+            <section class="eleven columns content">
+                <h3>Program</h3>
+                <p>When? <strong>Friday, July 2 2021, 08:30 - 16:30 EDT (14:30 - 22:30 CEST)</strong></p>
+                <p>Where? <strong>Washington D.C., USA (Online Event)</strong></p>
+                <section class="eleven columns content">
+
+                    <p>We are proud to present a high-quality program with speakers from different communities. Speakers who want to publish their talks after the satellite can send their slides via <a href="mailto:hackl@liverpool.ac.uk">E-Mail</a>.</p>
+
+                    <style>
+th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
+                    </style>
+                    <table width="100%">
+                        <tr>
+                          <th scope="col" width="100px"><strong>Time (EDT)</strong></th>
+                            <th scope="col"><strong>Presenter</strong></th>
+                        </tr>
+                        <tr bgcolor="#D4DEF0">
+                            <th scope="row">08:30 - 08:40</th>
+                            <td>Organizers<br /><strong>Opening Statement</strong></td>
+                        </tr>
+                        <!-- <tr>
+                             <th scope="row"><em>Session chair:</em></th>
+                             <td><em>Giona Casiraghi</em></td>
+                             </tr> -->
+                        <tr>
+                          <th scope="row">08:40 - 09:20</th>
+                          <td><strong>Keynote:</strong> <a href="https://www.ingoscholtes.net/">Ingo Scholtes</a> (Institute for Informatics (IfI)
+                            University of Zurich, CH; Faculty of Mathematics and Natural Sciences  University of Wuppertal, DE)<br />
+                            Keynote Talk: <span class="dropt" title="Abstract"> Higher-Order Network Science: From Theoretical Foundations to Machine Learning
+                            <span style="width:500px;">Higher-Order Network ScienceÖ From Theoretical Foundations to Machine Learning
+                            </span>
+                          </span>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+                        <tr bgcolor="#D4DEF0">
+                            <th scope="row">09:20 - 09:30</th>
+                            <td><strong>Short Break</strong></td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">09:30 - 10:00</th>
+                          <td>
+                            <span class="dropt" title="Bio">
+                              <a href="https://magazine.fbk.eu/en/spotlight/giulia-cencetti/">Giulia Cencetti</a>
+                              <span style="width:500px;">
+                                Giulia Cencetti is a postdoc at Fondazione Bruno Kessler (FBK) in Trento (Italy). She has a rich and interdisciplinary background: physicist by training, she obtained a PhD in Information Engineering working on complex systems and in particular on dynamical systems on complex networks. She developed different models to explore the impact of network topology on the dynamical behavior of a system, having as a ultimate goal to apply a strategic external control, with applications in biology, ecosystems stability, urban traffic and information flow. After PhD, she spent some months at the Department of Networks and Data Science at the Central European University (then in Budapest, now in Wien) where she started to explore the new emerging mathematical branch of higher-order networks. Then she contributed to a review on the topic, published at Physics Reports. In FBK she is exploiting her experience and theoretical knowledge to study social applications: her research spans from urban science to human interactions data analysis. Recently, she worked on a project of digital tracing for Covid-19, result of a big international collaboration.
+                              </span>
+                            </span>
+                            (Mobile and Social Computing Lab, Fondazione Bruno Kessler, IT)<br />
+                            Invited Talk: <span class="dropt" title="Abstract"> Random walk, synchronization and time-dependent social networks beyond pairwise interactions
+                            <span style="width:500px;">In the last thirty years network science has proven its strength in modelling many real-world interacting systems as generic agents, the nodes, connected by pairwise edges. Yet, in many relevant cases, interactions are not pairwise but involve larger sets of nodes, at a time. These systems are thus better described in the framework of higher-order networks, whose different orders connections effectively account for multi-body interactions. This intuition has recently opened the perspective to a new branch of network science, involving hypergraphs and simplicial complexes. At this point in history it is worthwhile to re-examine the plethora of systems which have been addressed through network science and wonder how they would appear if assuming a higher-order point of view. Let us consider for instance two of the most simple dynamical processes on networks: random walk and synchronization of oscillatory systems. Both processes are thoroughly described by an apt Laplacian operator in the standard pairwise setting and its generalization to higher-order has been the subject of multiple recent studies. Moving to more applicative scenarios, higher-order networks are useful to study social contexts, in order to seize the intrinsic dynamics of individuals’ behaviors when plunged into a collectivity, where social dynamics are hardly ascribable to pairwise settings and often comprise larger groups simultaneously interacting. Temporal hypergraphs hence qualify as a suitable tool to describe them. By analyzing social interactions datasets we find that higherorder interactions are ubiquitous and, similarly to their pairwise counterparts, characterized by heterogeneous dynamics. In conclusion, it is important to stress how higher-order structures of mutual interactions enrich investigation of both simple dynamical process and human temporal dynamics.
+                            </span>
+                            </span>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">10:00 - 10:30</th>
+                          <td><a href="https://iaciac.github.io/">Iacopo Iacopini</a> (Department of Network and Data Science, Central European University, AT)<br />
+                            Invited Talk: <span class="dropt" title="Abstract"> The role of higher-order interactions in the dynamics of social contagion and convention
+                            <span style="width:500px;">Dynamical processes that emulate human behaviors have been the focus of many studies, where social relationships and interactions are typically considered as an underlying structure. As shown recently in various contexts, it is moreover important to take into account the fact that individuals do not interact only in pairs but also in larger groups. Social interactions are indeed a natural testing ground for higher-order approaches. In this talk, I will discuss the effects of considering group interactions on the dynamics of social systems. In particular, I will generalize two models of social contagion and norm evolution, initially introduced and studied on graphs, and now extended as dynamical processes on hypergraphs. Leveraging real-world interaction data and analytical insights, I will show the emergence of novel phenomena such as discontinuous transitions and critical mass effects induced by higher-order interactions. After allowing for the presence of a committed minority, I will show that the ability of committed individuals to overturn an existing norm is non-monotonic in the number of participants in higher-order interactions. These results provide theoretical support to the observation that extremely small minorities can overcome the opinion of the corresponding large majority of the population. Overall, the findings confirm the relevance of going beyond network representations when modeling social phenomena.
+                            </span>
+                            </span>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+                        <tr bgcolor="#D4DEF0">
+                          <th scope="row">10:30 - 10:45</th>
+                          <td><strong>Virtual Coffee Break</strong></td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">10:45 - 11:15</th>
+                          <td><a href="https://antoneri.github.io">Anton Eriksson</a> (Department of Physics, Ume&aring University, SE)<br />
+                            Invited Talk: <span class="dropt" title="Abstract"> Flow-based community detection in hypergraphs
+                            <span style="width:500px;">
+                              To connect structure, dynamics and function in systems with multibody interactions, network scientists model random walks on hypergraphs and identify communities that confine the walks for a long time.  The two flow-based community-detection methods Markov stability and the map equation identify such communities based on different principles and search algorithms.  But how similar are the resulting communities? We explain both methods' machinery applied to hypergraphs and compare them on synthetic and real-world hypergraphs using various hyperedge-size biased random walks and time scales. We find that the map equation is more sensitive to time-scale changes and that Markov stability is more sensitive to hyperedge-size biases.
+                            </span>
+                            </span>
+                            <br /><a href="abstracts/HONS2021-Eriksson.pdf">[Download Abstract]</a>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">11:15 - 11:45</th>
+                          <td><a href="https://guifarruda.gitlab.io/">Guilherme Ferraz de Arruda</a> (ISI Foundation, IT)<br />
+                            Invited Talk: <span class="dropt" title="Abstract"> Social contagion models on hypergraphs
+                            <span style="width:500px;">
+                              Our understanding of the dynamics of complex
+                              networked systems has increased significantly in
+                              the last two decades. However, most of our
+                              knowledge is built upon assuming pairwise
+                              relations among the system's components. This
+                              assumption is often an oversimplification, for
+                              instance, in social interactions that frequently
+                              occur within groups.  For example, in WhatsApp or
+                              Telegram groups, the messages follow a one-to-many
+                              pattern of transmission. To overcome this
+                              limitation, here we study the dynamics of social
+                              contagion on hypergraphs, a mathematical object
+                              that imposes virtually no constraint regarding
+                              sizes. In this talk, we will discuss an analytical
+                              framework to study social contagion dynamics on
+                              arbitrary hypergraphs. Moreover, we will support
+                              our analytical results with numerical results and
+                              Monte Carlo simulations. Our analyses show that
+                              the model has a very rich parameter space with
+                              continuous and discontinuous transitions,
+                              bistability, and hysteresis. We will also discuss
+                              how this model opens new research paths on
+                              higher-order models and the analytical treatment
+                              of hypergraphs, posing further questions about
+                              modeling dynamical processes on higher-order
+                              structures.
+                            </span>
+                            </span>
+                          </td>
+                        </tr>
+
+                        <tr bgcolor="#D4DEF0">
+                          <th scope="row"><em>New</em></th>
+                          <td>DEMO Session</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">11:45 - 12:30</th>
+                          <td><a href="http://benmaier.org/">Ben Maier</a> (Robert Koch Institute, DE)<br />
+                            Demo: <span class="dropt" title="Abstract"> Temporal networks, modeling infectious diseases, interactive visualizations, and other fancy buzzwords: Three Python packages that might make your life easier
+                            <span style="width:500px;">
+                              The investigation of temporal networks and dynamic systems evolving on them has become a vivid area of research in recent years. Alas, the zoo of open source software that facilitates their modeling and analysis is sparsely populated. Here, I demonstrate the use of the C++(fast)-based Python(simple) package “tacoma” [1], which aims to do exactly that. I’ll show how to convert temporal networks between popular formats, perform simple analyses of their structure and temporal statistics, visualize them interactively, and simulate canonical disease spreading models on them. I’ll continue the demo with “epipack” [2], a Python package that I developed over the last year at Germany’s public health institute to build and analyze complex infectious disease models at lightning speed. “epipack”  allows users to easily perform numerical, analytical, and stochastic analyses of complex spreading models, latent or with interactive elements, as well as stochastic simulations on (un/)weighted, (un/)directed networks. Because “epipack” also has a built-in framework to visualize your custom-built spreading models on networks, I’ll showcase “netwulf” [3] in concurrence, which I co-developed with Ulf Aslak to facilitate layouting your static networks interactively in Python.
+                            </span>
+                            </span>
+                            <br /><a href="https://github.com/benmaier/tacoma">[1] tacoma</a>,
+                            <a href="https://github.com/benmaier/epipack">[2] epipack</a>,
+                            <a href="https://github.com/benmaier/netwulf">[3] netwulf</a>
+                          </td>
+                        </tr>
+
+
+
+
+                        <tr bgcolor="#D4DEF0">
+                          <th scope="row">12:30 - 13:00</th>
+                          <td><strong>Lunch / Dinner</strong></td>
+                        </tr>
+
+
+                        <tr>
+                          <th scope="row">13:00 - 13:40</th>
+                          <td><strong>Keynote:</strong>
+                            <span class="dropt" title="Bio">
+                              <a href="https://www.cs.cornell.edu/~arb/">Austin Benson</a>
+                              <span style="width:500px;">
+                                Austin Benson is an Assistant Professor of Computer Science and a Field Member of Applied Mathematics at Cornell University. His research develops numerical methods and algorithmic frameworks that enable new, better, and bigger analyses of complex data. This research has been recognized with a KDD best paper award, a JP Morgan Chase AI Faculty Award, and the Gene Golub doctoral Dissertation Award. Before joining Cornell, he received his PhD in computational and mathematical engineering at Stanford University.
+                              </span>
+                            </span>
+
+                            (Computer Science, Cornell University, USA)<br />
+                            Keynote Talk: <span class="dropt" title="Abstract"> Higher-order Homophily is Combinatorially Impossible
+                            <span style="width:500px;">Homophily is the seemingly ubiquitous tendency for people to connect with similar others, which is fundamental to how society organizes. Even though many social interactions occur in groups, homophily has traditionally been measured from collections of pairwise interactions involving just two individuals. In this talk, we develop a hypergraph-based framework to quantify homophily from higher-order, group interactions. This framework reveals that, surprisingly, many homophilous group preferences are impossible; for instance, men and women cannot simultaneously exhibit preferences for groups where their gender is the majority. This is not a human behavior but rather a combinatorial impossibility of hypergraphs. We will show that relaxed notions of group homophily appear in numerous contexts, albeit with subtleties. For example, U.S. members of Congress exhibit strong tendencies for cosponsoring bills with same-party cosponsors, but in order for this to be possible, there must be a substantial number of individuals from each party that are willing to cosponsor bills when their party is in the minority. We also examine gender distribution in group pictures with varying group sizes and find several differences from graph-based measures.
+                            </span>
+                            </span>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+
+
+                        <tr>
+                          <th scope="row">13:45 - 14:25</th>
+			  <td><strong>Panel Discussion:</strong> Why do we need higher-order models for social network analysis? A critical discussion. <br />
+                            <span class="dropt" title="Bio">
+                              <a href="https://usc-isi-i2.github.io/home/">Kristina Lerman, </a>
+                              <span style="width:500px;">
+                                Kristina Lerman is a Principal Scientist at the University of Southern California Information Sciences Institute and holds a joint appointment as a Research Professor in the USC Computer Science Department. Trained as a physicist, she now applies network analysis and machine learning to problems in computational social science, including crowdsourcing, social network and social media analysis.  Her recent work on modeling and understanding cognitive biases in social networks has been covered by the Washington Post, Wall Street Journal, and MIT Tech Review.
+                              </span>
+                            </span>
+                            <a href="https://people.ceu.edu/federico_battiston">Federico Battiston</a>,
+                            <a href="http://markusstrohmaier.info/">Markus Strohmaier</a>;
+			  </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">14:25 - 14:45</th>
+                          <td><stong>Panel Breakout (Q&A)</stong>
+                          </td>
+                        </tr>
+
+                        <tr bgcolor="#D4DEF0">
+                          <th scope="row">14:45 - 15:00</th>
+                          <td><strong>Virtual Coffee Break</strong></td>
+                        </tr>
+
+
+                        <tr>
+                          <th scope="row">15:00 - 15:30</th>
+                          <td>
+                            <span class="dropt" title="Bio">
+                            <a href="https://www.hmc.edu/mathematics/people/faculty/heather-zinn-brooks/">Heather Zinn Brooks</a>
+                              <span style="width:500px;">
+                                Heather Zinn Brooks is an Assistant Professor of
+                                Mathematics at Harvey Mudd College specializing
+                                in mathematical modeling of complex systems. In
+                                her work, she pairs tools from dynamical
+                                systems, differential equations, network theory,
+                                and stochastic processes with numerical
+                                simulation and data-driven computational
+                                techniques. She is especially enthusiastic about
+                                problems that involve the interplay of dynamics
+                                and structure. A few examples of this from her
+                                work include voltage fluctuations in ion
+                                channels, pattern formation of intracellular
+                                proteins, parasite spreading in animal grooming
+                                networks, and media impact on ideology in online
+                                social networks. Brooks earned both her
+                                Bachelor’s degree and Ph.D. in Mathematics from
+                                the University of Utah. Before joining the
+                                faculty at Harvey Mudd, she held a CAM
+                                postdoctoral position in the Mathematics
+                                department at UCLA.
+                              </span>
+                          </span>
+                          (Department of Mathematics, Harvey Mudd College, USA)<br />
+                          Invited Talk: <span class="dropt" title="Abstract"> A bounded-confidence model on hypergraphs
+                            <span style="width:500px;">
+                              In the study of opinion dynamics on networks, one
+                              often encodes interactions between people in the
+                              form of dyadic relationships, but many social
+                              interactions in real life are polyadic (i.e., they
+                              involve three or more people). In this talk, I'll
+                              discuss our extension of an asynchronous
+                              bounded-confidence model (BCM) to hypergraphs. We
+                              show that our hypergraph BCM converges to
+                              consensus under a wide range of initial conditions
+                              for the opinions of the nodes. We also show that
+                              there is a phase transition in the convergence
+                              time on the complete hypergraph when the variance
+                              of the initial opinion distribution equals the
+                              confidence bound c. Therefore, to determine the
+                              convergence properties of our hypergraph BCM when
+                              the variance and the number of hyperedges are both
+                              large, it is necessary to use analytical methods
+                              instead of relying only on Monte Carlo
+                              simulations.  Finally, we also observe a
+                              phenomenon that is not possible in standard dyadic
+                              BCMs: the opinions of individuals can sometimes
+                              jump from one opinion cluster to another in a
+                              single time step (we call this “opinion
+                              jumping”). This work is a collaboration with
+                              Abigail Hickok, Michelle Feng, Yacoub Kureh, and
+                              Mason Porter.
+                            </span>
+                            </span>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">15:30 - 16:00</th>
+                          <td>
+                            <span class="dropt" title="Bio">
+                              <a href="https://www.philchodrow.com/">Philip Chodrow</a>
+                              <span style="width:500px;">
+                                Phil Chodrow is a Hedrick Visiting Assistant Adjunct Professor (postdoctoral) in the Department of Mathematics at UCLA. His interests include network science, linear algebra, nonlinear dynamics, applied probability, and data science methodology. Recent topics of study include dominance and conflict in biosocial networks; models and algorithms for higher-order network analysis; and properties of configuration models of random graphs and hypergraphs. Before joining UCLA, Phil completed his PhD in Operations Research at MIT.
+                              </span>
+                            </span>
+                            (Department of Mathematics, UCLA, USA)<br />
+                            Invited Talk: <span class="dropt" title="Abstract">
+                            Detectability of Communities in Heterogeneous Hypergraphs
+                            <span style="width:500px;">
+                              The celebrated detectability threshold describes
+                              regimes of graphs in which no algorithm can detect
+                              the presence of planted communities, even when
+                              those communities are truly present and
+                              statistically distinct. Several recent papers have
+                              offered detectability results for communities in
+                              hypergraphs. Those results, however, focus on the
+                              case of uniform hypergraphs — hypergraphs in which
+                              all edges have the same cardinality. Since most
+                              hypergraph data is non-uniform, overcoming the
+                              uniformity assumption is an important next
+                              step. In this talk, I’ll first give a brief
+                              overview of detectability in graphs and uniform
+                              hypergraphs. I’ll then describe some ongoing work
+                              (joint with Jamie Haddock and Nicole Eikmeier) to
+                              extend the theory of hypergraph detectability via
+                              higher-order nonbacktracking operators. We offer
+                              extensions of the Ihara-Bass determinant formula
+                              to two classes of nonbacktracking operators, as
+                              well as experimentally-supported results regarding
+                              the location of the detectability threshold in
+                              non-uniform hypergraphs.
+                            </span>
+                            </span>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">16:00 - 16:30</th>
+                          <td><a href="https://faculty.math.illinois.edu/~rdeville/">Lee DeVille</a> (Department of Mathematics, University of Illinois at Urbana-Champaign, USA)<br />
+                            Invited Talk: <span class="dropt" title="Abstract"> Consensus on simplicial complexes --- results on stability and synchronization
+                            <span style="width:500px;">We consider a nonlinear flow on simplicial complexes generated from the simplicial Laplacian, and show that it is a generalization of various consensus and synchronization models commonly studied on networks. In particular, our model allows us to formulate flows on simplices of any dimension, so that it includes edge flows, triangle flows, etc. We show that the system can be represented as the gradient flow of an energy functional, and use this to deduce the stability of various steady states of the model. Finally, we demonstrate that our model contains higher-dimensional analogues of structures seen in related network models.
+                            </span>
+                            </span>
+                            <!--								<br /><a href="http://mkivela.com/hons2019_kivela.pdf">[Download Slides]</a>-->
+                          </td>
+                        </tr>
+
+
+                        <tr  bgcolor="#D4DEF0">
+                          <th scope="row">16:30</th>
+                          <td>Organizers<br /><strong>Closing Statement</strong>  </td>
+                        </tr>    
+                    </table>
+
+                </section>
+            </section>
+            <aside id="sidebar" class="four columns offset-by-one"></aside>
+
+        </div>
+
+        <footer class="container">
+            <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2019">Tweet</a>      
+            <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+        </footer>            
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    </body>
+</html>

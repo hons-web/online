@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2021</title>
+
+    <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider();
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2021</a></h3>
+          <div class="menu full">
+            <ul id="nav_menu_main"></ul>
+          </div>
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>
+                <ul id="nav_menu_small"></ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+
+      <section class="sixteen columns">
+          <div class="slider-wrapper theme-default">
+              <div id="slider" class="nivoSlider">
+                  <img src="images/slider/slide1.jpg" alt="" height="281" />
+              </div>
+          </div>
+      </section>
+      
+      <section class="eleven columns">
+
+        <article>
+          <h2>Welcome!</h2>
+        
+          <p style="text-align: justify">Researchers use network theory to describe and analyse complex systems found in nature, technology and society by abstracting relational information into ordinary graphs. However, graph representations consist of nodes with dyadic relationships that do not account for higher-order dependencies between nodes, present in many real complex systems, particularly in social systems. For example, collaborations between groups of actors cannot merely be decomposed into dyadic links, but instead require simplicial complex, manifolds, or hypergraph representations. Moreover, the dynamics in a social network are determined not just by the pairwise relationships of its members but also by complex peer influence and reinforcement mechanisms.</p>
+          <p style="text-align: justify">Over the past years, researchers in network science have shown that higher-order structures and dependencies can fundamentally change the importance of nodes captured by centrality measures, affect cluster and community structures in networked systems, and influence dynamical processes in non-trivial ways.</p>
+          <p style="text-align: justify">Building on this body of work on higher-order modelling techniques, the past editions of HONS have been a unique forum for researchers who try to understand what we miss when we analyse graphs and network representations of complex systems. Continuing this successful tradition, HONS 2021 will dedicate a track to the open challenge of higher-order models in social networks and provide a forum to exchange ideas and questions such as:</p>
+          <ul>
+            <li>- How can we detect higher-order dependencies that invalidate standard graph representations?</li>
+            <li>- What type of social systems require higher-order models?</li>
+            <li>- When and how do higher-order dependencies influence social dynamics?</li>
+            <li>- What generative models can explain higher-order dependencies in social systems?</li>
+          </ul>
+          <p style="text-align: justify">We look forward seeing you in Washington D.C. or virtually at the HONS satellite!</p>
+        </article> 
+      </section>
+      <aside id="sidebar" class="four columns offset-by-one"></aside>
+    </div>
+
+    <footer class="container">
+      <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2019">Tweet</a>      
+      <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
+      <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
+    </footer>            
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  </body>
+</html>
