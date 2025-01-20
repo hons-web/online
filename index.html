@@ -1,90 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>HONS 2025</title>
 
-    <!-- Nivo Slider Styles -->
     <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
-
-    <!-- Custom Styles -->
-    <style>
-        /* Slider container style */
-        #slider {
-            width: 100%;
-            max-width: 800px;
-            height: 400px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Slider images style */
-        #slider img {
-            height: 100%;
-            width: auto;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
-
-    <!-- jQuery and Plugins -->
+    <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="javascripts/jquery.nivo.slider.pack.js"></script>
     <script src="javascripts/menu.js"></script>
 
     <script>
-        $(document).ready(function () {
-            // Load menu and sidebar
-            $("#nav_menu_main").load("menu.html");
-            $("#nav_menu_small").load("menu.html");
-            $("#sidebar").load("sidebar.html");
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
 
-            // Initialize Nivo Slider
-            $('#slider').nivoSlider({
-                pauseTime: 5000
-            });
+        $('#slider').nivoSlider({pauseTime: 5000});
 
-            // Dropdown menu toggle
-            $('.menu.dropdown ul li').click(function () {
-                $(this).find('ul').toggle();
-            });
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
         });
+      });
     </script>
-</head>
-<body>
-    <!-- Header -->
-    <header class="page">
-        <div class="container">
-            <div class="sixteen columns logo">
-                <h3><a href="index.html">HONS 2025</a></h3>
-                <div class="menu full">
-                    <ul id="nav_menu_main"></ul>
-                </div>
-                <div class="menu dropdown">
-                    <ul>
-                        <li><a href="#">Menu</a>
-                            <ul id="nav_menu_small"></ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+  </head>
 
-    <!-- Main Content -->
+  <body>
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2025</a></h3>
+          <div class="menu full">
+            <ul id="nav_menu_main"></ul>
+          </div>
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>
+                <ul id="nav_menu_small"></ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
     <div class="container">
-        <section class="sixteen columns">
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <img src="images/slider/slider1.jpg" alt="Slide 1" />
-                    <img src="images/slider/slider2.jpg" alt="Slide 2" />
-                    <img src="images/slider/slider3.jpg" alt="Slide 3" />
-                </div>
-            </div>
-        </section>
+
+      <section class="sixteen columns">
+          <div class="slider-wrapper theme-default">
+              <div id="slider" class="nivoSlider">
+                  <img src="images/slider/slider1.jpg" alt="" height="281" />
+                  <img src="images/slider/slider2.jpg" alt="" height="281" />
+                  <img src="images/slider/slider3.jpg" alt="" height="281" />
+              </div>
+          </div>
+      </section>
 
         <section class="eleven columns">
             <article>
