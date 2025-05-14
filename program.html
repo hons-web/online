@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>    
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>HONS 2025</title>
 
@@ -12,10 +12,6 @@
         <link href="stylesheets/abstracts.css" type="text/css" rel="stylesheet" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="javascripts/jquery.nivo.slider.pack.js"></script>
@@ -34,6 +30,64 @@
                 });
             });
         </script>
+         <style>
+            /* Existing table styles */
+            th, td {
+                border: 1px dashed rgba(183,183,183,1.00);
+                border-left:none;
+                border-right:none;
+                padding: 12px 8px; /* Increased vertical padding for better spacing */
+                text-align: left; /* Align text to the left */
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%; /* Make table full width */
+                margin-top: 20px; /* Add space above the table */
+                border-top: 1px dashed rgba(183,183,183,1.00); /* Add top border */
+                border-bottom: 1px dashed rgba(183,183,183,1.00); /* Add bottom border */
+            }
+             table thead th {
+                border-bottom: 2px solid rgba(183,183,183,1.00); /* Thicker border below header */
+                font-weight: bold;
+                padding-bottom: 10px;
+             }
+
+            /* Styles inspired by the second example */
+            table th[scope="row"] {
+                font-weight: bold; /* Make the time bold */
+                background-color: #D4DEF0; /* Alternating row color for time */
+                vertical-align: top; /* Align time to the top */
+            }
+             table tr:nth-child(even):not(.highlight) { /* Add subtle alternating row color for data rows, exclude highlights */
+                background-color: #f9f9f9;
+            }
+             table tr.highlight { /* Style for breaks */
+                background-color: #D4DEF0;
+                font-weight: bold;
+                text-align: center;
+             }
+             table td strong { /* Style for key parts like Keynote/Invited/Contributed */
+                 display: inline; /* Keep strong inline */
+                 margin-right: 5px; /* Add a little space after the colon */
+             }
+             table td .speaker-info {
+                 display: inline;
+             }
+             table td .talk-title {
+                 display: block; /* Ensure title is on a new line */
+                 margin-top: 4px; /* Add space above the title */
+                 font-style: italic; /* Italicize the title */
+             }
+             table td a {
+                 color: #007bff; /* Link color */
+                 text-decoration: none; /* No underline by default */
+             }
+             table td a:hover {
+                 text-decoration: underline; /* Underline on hover */
+             }
+
+
+        </style>
     </head>
 
     <body>
@@ -61,147 +115,171 @@
             <section class="eleven columns content">
                 <h3>Program</h3>
                 <p>When? <strong> 2 June, 9:00 - 18:00 </strong></p>
-                <p>Where? <strong>Maastricht (details coming soon!)</strong></p>
+                <p>Where? <strong>Maastricht: FASoS GG90-92 A0 Turnzaal</strong></p>
                 <section class="eleven columns content">
 
-                  <p>[Details Coming Soon]</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col" width="100px"><strong>Time</strong></th>
+                                <th scope="col"><strong>Details</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">9:00 - 9:05</th>
+                                <td><strong>Opening</strong></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">9:05 – 10:00</th>
+                                <td>
+                                    <strong>Keynote:</strong> <span class="speaker-info"><a href=https://maximelucas.github.io>Maxime Lucas</a> (Namur Institute for Complex Systems, Belgium)</span><br>
+                                    <!-- <span class="talk-title">Higher-order network science 1</span> -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">10:00 – 10:20</th>
+                                <td>
+                                    <strong>Invited speaker:</strong> <span class="speaker-info"><a href=https://cssociety.org/member/574188fb-ed09-486f-a421-ceda10a90bcf>Luca Gallo</a> (Corvinus University of Budapest, Hungary)</span>
+                                    <span class="talk-title">Face-to-face interactions through the lens of higher-order networks</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">10:20 – 10:40</th>
+                                <td>
+                                    <strong>Contributed speaker:</strong> <span class="speaker-info"><a href=https://hoppe.io>Josef Hoppe</a> (RWTH Aachen University, Germany)</span><br>
+                                    <span class="talk-title">Random Abstract Cell Complexes</span>
+                                </td>
+                            </tr>
+
+                            <tr class="highlight">
+                                <th scope="row">10:40 – 11:00</th>
+                                <td><strong>Coffee break</strong></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">11:00 – 11:20</th>
+                                <td>
+                                    <strong>Invited speaker:</strong> <span class="speaker-info"><a href=https://www.cdebacco.com>Caterina De Bacco</a> (TU Delft, Netherlands)</span><br>
+                                    <!-- <span class="talk-title">Higher-order network science 2</span> -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">11:20 – 11:40</th>
+                                <td>
+                                    <strong>Contributed speaker:</strong> <span class="speaker-info"><a href=https://webapps.unitn.it/du/it/Persona/PER0186300/Didattica>Quintino Francesco Lotito</a> (University of Trento, Italy)</span><br>
+                                    <span class="talk-title">Hypergraphx: a library for higher-order network analysis</span>
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <th scope="row">11:40 – 12:00</th>
+                                <td>
+                                    <strong>Contributed speaker:</strong> <span class="speaker-info"><a href="#">Roberta Ranieri</a> (Politecnico di Torino, Italy)</span><br>
+                                    <span class="talk-title">Enhancing opinion dynamics model through memory and higher-order neighbors</span>
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <th scope="row">12:00 – 12:20</th>
+                                <td>
+                                    <strong>Invited speaker:</strong> <span class="speaker-info"><a href=https://pwelke.de>Pascal Welke</a> (Lancaster University Leipzig, Germany)</span><br>
+                                    <span class="talk-title">Homomorphism Counting for Learning on Graphs</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">12:20 – 12:30</th>
+                                <td><strong>Wrap-up</strong></td>
+                            </tr>
+
+                            <tr class="highlight">
+                                <th scope="row">12:30 – 14:00</th>
+                                <td><strong>Lunch</strong></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">14:00 – 15:00</th>
+                                <td>
+                                    <strong>Keynote:</strong> <span class="speaker-info"><a href=https://chrisbloecker.se>Christopher Blöcker</a> (University of Würzburg, Germany)</span><br>
+                                    <!-- <span class="talk-title">Temporal graph learning</span> -->
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <th scope="row">15:00 – 15:20</th>
+                                <td>
+                                    <strong>Invited speaker:</strong> <span class="speaker-info"><a href=https://juliagast.github.io>Julia Gastinger</a> (University of Mannheim, Germany)</span><br>
+                                    <span class="talk-title">Learning on Temporal Knowledge Graphs: Challenges and Approaches</span>
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <th scope="row">15:20 – 15:40</th>
+                                <td>
+                                    <strong>Contributed speaker:</strong> <span class="speaker-info"><a href=https://www.universiteitleiden.nl/en/staffmembers/alberto-ceria#tab-1>Alberto Ceria</a> (Leiden University, Netherlands)</span><br>
+                                    <span class="talk-title">Higher-order temporal network prediction and interpretation</span>
+                                </td>
+                            </tr>
+
+                            <tr class="highlight">
+                                <th scope="row">15:40 – 16:00</th>
+                                <td><strong>Coffee break</strong></td>
+                            </tr>
+
+                             <tr>
+                                <th scope="row">16:00 – 16:20</th>
+                                <td>
+                                    <strong>Invited speaker:</strong> <span class="speaker-info"><a href=https://iuliaduta.github.io>Iulia Duta</a> (University of Cambridge, United Kingdom)</span><br>
+                                    <span class="talk-title">Discovering latent hypergraph structure</span>
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <th scope="row">16:20 – 16:40</th>
+                                <td>
+                                    <strong>Contributed speaker:</strong> <span class="speaker-info"><a href=https://rubrica.unisa.it/persone?matricola=040996>Daniele De Vinco</a> (University of Salerno, Italy)</span><br>
+                                    <span class="talk-title">Hypergraph Motif Representation Learning</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">16:40 – 17:00</th>
+                                <td>
+                                    <strong>Invited speaker:</strong> <span class="speaker-info">Waiting for confirmation</span><br>
+                                    <!-- <span class="speaker-info"><a href=https://sites.google.com/unisi.it/gmdimitri/>Giovanna Maria Dimitri</a> (University of Siena, Italy) (90% Yes)</span> -->
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">17:00 – 17:20</th>
+                                <td>
+                                    <strong>Contributed speaker:</strong> <span class="speaker-info"><a href=https://www.tilburguniversity.edu/staff/v-sanchezmelchor>Valentina Sanchez Melchor</a> (Tilburg University, Netherlands)</span><br>
+                                    <span class="talk-title">The Human Brain as a Combinatorial Complex</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">17:20 - 17:40</th>
+                                <td>
+                                    <strong>Contributed speaker:</strong> <span class="speaker-info"><a href=https://chester-tan.com>Chester Tan</a> (University of Wurzburg, Germany)</span><br>
+                                    <span class="talk-title">Topological LLMs? Designing higher-order autoregressive seq2seq models by unifying multi-order sequence models with simplicial complexes, cell complexes, and hypergraphs.</span>
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <th scope="row">17:40 – 18:00</th>
+                                <td><strong>Panel & Wrap-Up</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
 
-
-                    <h4>Call for Contributions</h4>
-                    <p style="text-align: justify">
-                      <p style="text-align: justify">
-                        <strong>Want to present at HONAI?</strong> <br>We're accepting contributed talks! <br> Show your love for networks and AI by submitting a one-page abstract with a representative figure to <a href="mailto:grande@cs.rwth-aachen.de">grande@cs.rwth-aachen.de</a>. Submission deadline: Valentine's Day (February 14th, 2025).
-                        </p>
-                        <p style="text-align: justify">
-                          Authors of selected contributions will be invited to submit their work to a <strong>dedicated Special Issue</strong>, "<a href="https://link.springer.com/collections/hafcebgfci">Bridging Network Science and AI</a>," in the Applied Network Science journal.
-                          </p>
-
-
-                    <!-- <p>We are proud to present a high-quality program with speakers from different communities. Speakers who want to publish their talks after the satellite can send their slides via <a href="mailto:franziska.heed@uni-wuerzburg.de">E-Mail</a>.</p> -->
-                    
-                    <style>
-                      th, td {border: 1px dashed rgba(183,183,183,1.00);border-left:none;border-right:none;}table{border-collapse: collapse;}
-                    </style>
-
-<!--                     
-                    <table width="100%">
-                        <tr>
-                          <th scope="col" width="100px"><strong>JUNE 18th</strong></th>
-                            <th scope="col"><strong>Presenter</strong></th>
-                        </tr>
-                        <tr bgcolor="#D4DEF0">
-                            <th scope="row">14:30 - 14:45</th>
-                            <td><a href="https://www.ingoscholtes.net/">Ingo Scholtes</a><br /><strong>Opening Statement</strong></td>
-                        </tr>
-
-                        <tr>
-                          <th scope="row">14:45 - 15:30</th>
-                          <td>
-                            <a href="http://eliassi.org/">Tina Eliassi-Rad</a>
-                            <br>
-                            Northeastern University, USA
-                            <br>
-                            <span class="dropt" title="">
-                              Title: Hypergraph Mining: Patterns, Tools, and Generators
-                              <span style="width:500px;">
-                                Abstract TBA
-                              </span>
-                            </span>
-                          </td>
-                        </tr>
-                        
-                        <tr>
-                          <th scope="row">15:30 - 16:00</th>
-                          <td>
-                            <a href="">Philipp Hövel</a>
-                            <br>
-                            Saarland University, Germany
-                            <br>
-                            <span class="dropt" title="">
-                              Title: Information Parity and Motif Analysis to Fingerprint Networks and their Symmetries
-                              <span style="width:500px;">
-                                Abstract TBA
-                              </span>
-                            </span>
-                          </td>
-                        </tr>
-
-                        <tr bgcolor="#D4DEF0">
-                          <th scope="row">16:00 - 16:30</th>
-                          <td><strong>Coffee Break</strong></td>
-                        </tr>
-
-                        <tr>
-                          <th scope="row">16:30 - 17:00</th>
-                          <td>
-                            <a href="">Veronica Lachi</a>
-                            <br>
-                            Fondazione Bruno Kessler, Italy
-                            <br>
-                            <span class="dropt" title="">
-                              Title: Graph Neural Networks for Temporal Graphs: State of the Art, Open Challenges, and Opportunities
-                              <span style="width:500px;">
-                                Abstract TBA
-                              </span>
-                            </span>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <th scope="row">17:00 - 17:30</th>
-                          <td>
-                            <a href="https://www.cs.purdue.edu/homes/ribeirob/">Bruno Ribeiro</a>
-                            <br>
-                            Purdue University, USA
-                            <br>
-                            <span class="dropt" title="">
-                              Title: Enhancing AI Robustness Through Hypergraph Learning
-                              <span style="width:500px;">
-                                In this talk we explore the use of hypergraphs to create more robust machine learning models.
-                                We will start with how hypergraphs help design neural networks that can better reason algorithmically.
-                                Then, we will see how higher-order networks are used today for state-of-the-art robustness to
-                                out-of-distribution shifts in graph tasks. Finally, we introduce how to learn hypergraph
-                                embeddings from static dyadic graphs for better multi-link predictions tasks.
-                              </span>
-                            </span>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <th scope="row">17:30 - 18:00</th>
-                          <td>
-                            <a href="">Vincent P. Grande</a>
-                            <br>
-                            RWTH Aachen University, Germany
-                            <br>
-                            <span class="dropt" title="">
-                              Title: Hodge Learning: What the Eigenspectrum of the Hodge Laplacian tells us about higher-order network topology and geometry
-                              <span style="width:500px;">
-                                The rich spectral information of the graph Laplacian has been instrumental in graph theory, machine learning, 
-                                and graph signal processing for a diverse range of applications. Recently, Hodge Laplacians have come into 
-                                focus as a generalisation of the Laplacian for simplicial complexes. Many authors analyse the smallest 
-                                eigenvalues of the Hodge Laplacian, which are connected to important topological and spatial properties of 
-                                simplicial complexes and higher-order networks. However, small eigenvalues of the Hodge Laplacians can carry 
-                                different information depending on whether they are related to curl or gradient eigenmodes. We track individual 
-                                harmonic, curl, and gradient eigenvectors/-values through the so-called persistence filtration, leveraging the 
-                                full information contained in the spectrum across all scales of a point cloud. Finally, we use our insights 
-                                (a) to introduce Hodge spectral clustering and (b) to classify edges and higher-order simplices based on their 
-                                relationship to the smallest harmonic, curl, and gradient eigenvectors.
-                              </span>
-                            </span>
-                          </td>
-                        </tr>
-
-                    <tr bgcolor="#D4DEF0">
-                      <th scope="row">18:00</th>
-                      <td><a href="">Organisers</a><br /><strong>Closing Statement</strong></td>
-                  </tr>
-
-
-                    </table> -->
-
-                </section>
+                    </section>
             </section>
             <aside id="sidebar" class="four columns offset-by-one"></aside>
 
@@ -209,12 +287,12 @@
 
         <footer class="container">
             <div class="g-plusone" data-annotation="inline" data-width="300"></div>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2019">Tweet</a>      
+            <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2019">Tweet</a>
             <script src="https//platform.linkedin.com/in.js" type="text/javascript"></script>
             <script type="IN/Share" data-counter="right" data-url="https://complexdata.businesscatalyst.com"></script>
-        </footer>            
+        </footer>
 
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-     
+
     </body>
 </html>
