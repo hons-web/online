@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HONS 2025</title>
+
+    <link rel="stylesheet" href="stylesheets/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="stylesheets/slider-themes/default/default.css" type="text/css" media="screen" />
+    <link href="stylesheets/base.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/skeleton.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheets/layout.css" type="text/css" rel="stylesheet" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="javascripts/jquery.nivo.slider.pack.js"></script>
+    <script src="javascripts/menu.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#nav_menu_main").load("menu.html");
+        $("#nav_menu_small").load("menu.html");
+        $("#sidebar").load("sidebar.html");
+
+        $('#slider').nivoSlider({pauseTime: 5000});
+
+        $('.menu.dropdown ul li').click(function(){
+           $(this).find('ul').toggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="page">
+      <div class="container">
+
+        <div class="sixteen columns logo">
+          <h3><a href="index.html">HONS 2025</a></h3>
+          <div class="menu full">
+            <ul id="nav_menu_main"></ul>
+          </div>
+
+          <div class="menu dropdown">
+            <ul>
+              <li><a href="#">Menu</a>
+                <ul id="nav_menu_small"></ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+
+      <section class="sixteen columns">
+          <div class="slider-wrapper theme-default">
+              <div id="slider" class="nivoSlider">
+                  <img src="images/slider/slider1.jpg" alt="" height="281" />
+                  <img src="images/slider/slider2.jpg" alt="" height="281" />
+                  <img src="images/slider/slider3.jpg" alt="" height="281" />
+              </div>
+          </div>
+      </section>
+
+        <section class="eleven columns">
+            <article>
+                <h2>HONAI 2025: Higher-Order Networks meets AI 🍯</h2>
+                <p style="text-align: justify;">
+                    While successful in many domains, traditional graph representations and standard algorithmic methods still fall short in capturing crucial higher-order properties of complex systems – from group collaborations to temporal dependencies. HONAI explores how the fusion of AI with advanced network models like simplicial complexes, manifolds, and hypergraphs can revolutionize our understanding of these systems.
+                </p>
+                <p style="text-align: justify;">
+                    Join us in exploring cutting-edge research at the intersection of higher-order network science and AI, focusing on network forecasting, prediction, and completion. We invite contributions from both network scientists and AI specialists, with a strong emphasis on research grounded in higher-order network analysis.
+                </p>
+                <p><em>(<strong>HONAI</strong> = <strong>H</strong>igher-<strong>O</strong>rder <strong>N</strong>etwork science meets <strong>AI</strong>, pronounced like "honey" 🍯)</em></p>
+            </article>
+
+            <article>
+                <h2>Call for Contributions</h2>
+                <div class="submission-info">
+                    <h4>📝 Submit Your Work</h4>
+                    <p style="text-align: justify;">
+                        We're accepting contributed talks! Show your love for networks and AI by submitting a one-page abstract with a representative figure to 
+                        <a href="mailto:grande@cs.rwth-aachen.de">grande@cs.rwth-aachen.de</a>
+                    </p>
+                    <p><strong>Deadline:</strong> Valentine's Day (February 14th, 2025)</p>
+                </div>
+                <div class="special-issue">
+                    <h4>📚 Special Issue Opportunity</h4>
+                    <p style="text-align: justify;">
+                        Authors of selected contributions will be invited to submit their work to a <strong>dedicated Special Issue</strong>, "<a href="https://link.springer.com/collections/hafcebgfci">Bridging Network Science and AI</a>," in the Applied Network Science journal.
+                    </p>
+                </div>
+                <div class="topics">
+                    <h4>🎯 Topics of Interest</h4>
+                    <ul>
+                        <li>Modeling complex systems as higher-order networks</li>
+                        <li>Applications of higher-order models to network analysis</li>
+                        <li>Representation learning for hypergraphs and simplicial complexes</li>
+                        <li>Deep learning and federated learning models for higher-order interactions</li>
+                        <li>Forecasting of spatiotemporal networks</li>
+                        <li>Explainable graph machine learning algorithms</li>
+                        <li>Topology-aware neural network design</li>
+                        <li>Visualization techniques for higher-order networks</li>
+                        <li>Ethical considerations in higher-order network analysis and AI</li>
+                    </ul>
+                </div>
+                <p style="text-align: justify;">We look forward to seeing you at HONAI 2025!</p>
+            </article>
+        </section>
+        <aside id="sidebar" class="four columns offset-by-one"></aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container">
+        <div class="social-share">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="NetSci2025">Tweet</a>
+            <script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-counter="right"></script>
+        </div>
+    </footer>
+</body>
+</html>
